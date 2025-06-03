@@ -4,8 +4,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/sysnet"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/sysnet"
 )
 
 // ResolveServiceHandler notifies about resolving results over local network.

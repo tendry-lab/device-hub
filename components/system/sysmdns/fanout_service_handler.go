@@ -1,6 +1,6 @@
 package sysmdns
 
-import "github.com/open-control-systems/device-hub/components/system/syscore"
+import "github.com/tendry-lab/device-hub/components/system/syscore"
 
 // FanoutServiceHandler notifies the underlying handlers about discovered mDNS service.
 type FanoutServiceHandler struct {

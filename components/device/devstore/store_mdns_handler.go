@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/sysmdns"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/sysmdns"
 )
 
 // StoreMdnsHandler notifies store about new devices discovered over local network.

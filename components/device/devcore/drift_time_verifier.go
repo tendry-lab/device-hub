@@ -3,7 +3,7 @@ package devcore
 import (
 	"time"
 
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // DriftTimeVerifier checks the timestamp difference between local and device UNIX time.

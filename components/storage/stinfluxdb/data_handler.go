@@ -8,8 +8,8 @@ import (
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api"
 
-	"github.com/open-control-systems/device-hub/components/device/devcore"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/device/devcore"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // DataHandler stores incoming data in influxDB.

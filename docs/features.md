@@ -138,7 +138,7 @@ Desc examples:
 - `room-plant-zamioculcas`
 - `living-room-light-bulb`
 
-Let's explore an example of the device, that correctly provides the required txt records. The following steps assume that [bonsai firmware](https://github.com/open-control-systems/bonsai-firmware) is installed on the device. Due to specific `bonsai-firmware` settings it's necessary for the device-hub to connect to the `bonsai-firmware` WiFi AP to ensure that device-hub can get the data from the device.
+Let's explore an example of the device, that correctly provides the required txt records. The following steps assume that [bonsai firmware](https://github.com/tendry-lab/bonsai-firmware) is installed on the device. Due to specific `bonsai-firmware` settings it's necessary for the device-hub to connect to the `bonsai-firmware` WiFi AP to ensure that device-hub can get the data from the device.
 
 ```bash
 avahi-browse -r _http._tcp

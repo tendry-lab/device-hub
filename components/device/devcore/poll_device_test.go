@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-control-systems/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/status"
 )
 
 type testFetcher[T any] struct {

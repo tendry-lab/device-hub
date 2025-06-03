@@ -1,6 +1,6 @@
 package syssched
 
-import "github.com/open-control-systems/device-hub/components/system/syscore"
+import "github.com/tendry-lab/device-hub/components/system/syscore"
 
 // FanoutStopper propagates stop call to the underlying stoppers.
 type FanoutStopper struct {

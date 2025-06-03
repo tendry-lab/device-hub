@@ -17,17 +17,17 @@ import (
 	"github.com/spf13/cobra"
 	"go.etcd.io/bbolt"
 
-	"github.com/open-control-systems/zeroconf"
+	"github.com/tendry-lab/zeroconf"
 
-	"github.com/open-control-systems/device-hub/components/device/devstore"
-	"github.com/open-control-systems/device-hub/components/http/htcore"
-	"github.com/open-control-systems/device-hub/components/http/hthandler"
-	"github.com/open-control-systems/device-hub/components/storage/stcore"
-	"github.com/open-control-systems/device-hub/components/storage/stinfluxdb"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
-	"github.com/open-control-systems/device-hub/components/system/sysmdns"
-	"github.com/open-control-systems/device-hub/components/system/sysnet"
-	"github.com/open-control-systems/device-hub/components/system/syssched"
+	"github.com/tendry-lab/device-hub/components/device/devstore"
+	"github.com/tendry-lab/device-hub/components/http/htcore"
+	"github.com/tendry-lab/device-hub/components/http/hthandler"
+	"github.com/tendry-lab/device-hub/components/storage/stcore"
+	"github.com/tendry-lab/device-hub/components/storage/stinfluxdb"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/system/sysmdns"
+	"github.com/tendry-lab/device-hub/components/system/sysnet"
+	"github.com/tendry-lab/device-hub/components/system/syssched"
 )
 
 type appOptions struct {

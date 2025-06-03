@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/open-control-systems/device-hub/components/http/htcore"
+	"github.com/tendry-lab/device-hub/components/http/htcore"
 )
 
 // StoreHTTPHandler allows to add/remove devices over HTTP API.

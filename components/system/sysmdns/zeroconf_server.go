@@ -3,7 +3,7 @@ package sysmdns
 import (
 	"net"
 
-	"github.com/open-control-systems/zeroconf"
+	"github.com/tendry-lab/zeroconf"
 )
 
 // ZeroconfServer registers new mDNS services.

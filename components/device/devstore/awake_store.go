@@ -1,6 +1,6 @@
 package devstore
 
-import "github.com/open-control-systems/device-hub/components/system/syssched"
+import "github.com/tendry-lab/device-hub/components/system/syssched"
 
 // AwakeStore to notify the awakener that the store operation has happened.
 type AwakeStore struct {

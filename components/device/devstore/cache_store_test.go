@@ -11,10 +11,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-control-systems/device-hub/components/device/devcore"
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/storage/stcore"
-	"github.com/open-control-systems/device-hub/components/system/sysnet"
+	"github.com/tendry-lab/device-hub/components/device/devcore"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/storage/stcore"
+	"github.com/tendry-lab/device-hub/components/system/sysnet"
 )
 
 type testCacheStoreDB struct {

@@ -4,8 +4,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/open-control-systems/device-hub/components/status"
 	"github.com/stretchr/testify/require"
+	"github.com/tendry-lab/device-hub/components/status"
 )
 
 type testResolveServiceHandlerResolveHandler struct {
