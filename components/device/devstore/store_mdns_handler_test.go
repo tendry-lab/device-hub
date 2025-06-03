@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/sysmdns"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/sysmdns"
 )
 
 type testStoreMdnsHandlerDevice struct {

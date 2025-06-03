@@ -5,8 +5,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // ResolveStore caches the result of hostname resolving.

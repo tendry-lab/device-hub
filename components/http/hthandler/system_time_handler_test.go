@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-control-systems/device-hub/components/http/htcore"
+	"github.com/tendry-lab/device-hub/components/http/htcore"
 )
 
 type testClock struct {

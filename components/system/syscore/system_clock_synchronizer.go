@@ -1,7 +1,7 @@
 package syscore
 
 import (
-	"github.com/open-control-systems/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/status"
 )
 
 // SystemClockSynchronizer synchronizes the UNIX time between local and remote resources.

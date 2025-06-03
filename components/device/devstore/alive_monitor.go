@@ -1,6 +1,6 @@
 package devstore
 
-import "github.com/open-control-systems/device-hub/components/system/syssched"
+import "github.com/tendry-lab/device-hub/components/system/syssched"
 
 // AliveMonitor to monitor the device well-being.
 type AliveMonitor interface {

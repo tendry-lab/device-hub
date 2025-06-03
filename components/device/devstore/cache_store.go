@@ -8,13 +8,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-control-systems/device-hub/components/device/devcore"
-	"github.com/open-control-systems/device-hub/components/http/htcore"
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/storage/stcore"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
-	"github.com/open-control-systems/device-hub/components/system/sysnet"
-	"github.com/open-control-systems/device-hub/components/system/syssched"
+	"github.com/tendry-lab/device-hub/components/device/devcore"
+	"github.com/tendry-lab/device-hub/components/http/htcore"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/storage/stcore"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/system/sysnet"
+	"github.com/tendry-lab/device-hub/components/system/syssched"
 )
 
 // CacheStoreParams represents various configuration options for a cache store.

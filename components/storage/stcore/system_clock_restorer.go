@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // SystemClockRestorer restores the UNIX timestamp from the persistent storage.

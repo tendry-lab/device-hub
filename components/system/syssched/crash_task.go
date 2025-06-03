@@ -1,6 +1,6 @@
 package syssched
 
-import "github.com/open-control-systems/device-hub/components/system/syscore"
+import "github.com/tendry-lab/device-hub/components/system/syscore"
 
 // CrashTask reports the crash from the underlying task to the log.
 type CrashTask struct {

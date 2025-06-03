@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // PollDevice actively fetches telemetry and registration data.

@@ -1,7 +1,7 @@
 package stcore
 
 import (
-	"github.com/open-control-systems/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/status"
 	"go.etcd.io/bbolt"
 )
 

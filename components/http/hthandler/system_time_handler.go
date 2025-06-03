@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/open-control-systems/device-hub/components/http/htcore"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/http/htcore"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // SystemTimeHandler handles the UNIX time configuration over HTTP.

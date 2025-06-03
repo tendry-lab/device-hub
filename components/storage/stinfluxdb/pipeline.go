@@ -6,9 +6,9 @@ import (
 
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 
-	"github.com/open-control-systems/device-hub/components/storage/stcore"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
-	"github.com/open-control-systems/device-hub/components/system/syssched"
+	"github.com/tendry-lab/device-hub/components/storage/stcore"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/system/syssched"
 )
 
 // DBParams provides various configuration options for influxDB.

@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-control-systems/device-hub/components/system/syscore"
-	"github.com/open-control-systems/device-hub/components/system/syssched"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/system/syssched"
 )
 
 // StoreAliveMonitor monitors the operational health of devices. If a device isn't

@@ -71,7 +71,7 @@ sudo apt-get install git
 **Clone device-hub repository**
 
 ```bash
-git clone https://github.com/open-control-systems/device-hub.git
+git clone https://github.com/tendry-lab/device-hub.git
 ```
 
 **Configure influxdb service**
@@ -171,7 +171,7 @@ The device-hub relies on the mDNS to receive data from the IoT devices. That's w
 
 **Automatic registration**
 
-The following steps assume that [bonsai firmware](https://github.com/open-control-systems/bonsai-firmware) is installed on the device. The device acts as a WiFi AP to which device-hub is connected.
+The following steps assume that [bonsai firmware](https://github.com/tendry-lab/bonsai-firmware) is installed on the device. The device acts as a WiFi AP to which device-hub is connected.
 
 ```bash
 # Scan the network for the corresponding device's AP.
@@ -182,7 +182,7 @@ nmcli device wifi list
 sudo nmcli device wifi connect "bonsai-growlab-369C92005E9930A1D" password "bonsai-growlab-369C920"
 ```
 
-Devices based on the [bonsai firmware](https://github.com/open-control-systems/bonsai-firmware) can be automatically discovered by the device-hub. So, no further steps are required, just make sure that the device has been correctly discovered by the device-hub. Check the device-hub logs for the following lines:
+Devices based on the [bonsai firmware](https://github.com/tendry-lab/bonsai-firmware) can be automatically discovered by the device-hub. So, no further steps are required, just make sure that the device has been correctly discovered by the device-hub. Check the device-hub logs for the following lines:
 
 ```
 inf: 2025/02/10 08:56:43.819963 resolve_store.go:44: addr resolved: hostname=bonsai-growlab.local: addr=1

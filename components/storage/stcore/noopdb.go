@@ -1,6 +1,6 @@
 package stcore
 
-import "github.com/open-control-systems/device-hub/components/status"
+import "github.com/tendry-lab/device-hub/components/status"
 
 // NoopDB is a non-operational database.
 type NoopDB struct{}

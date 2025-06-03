@@ -4,8 +4,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/open-control-systems/device-hub/components/http/httransport"
-	"github.com/open-control-systems/device-hub/components/system/sysnet"
+	"github.com/tendry-lab/device-hub/components/http/httransport"
+	"github.com/tendry-lab/device-hub/components/system/sysnet"
 )
 
 // HTTPClient is a standard HTTP client wrapper that simplifies reading responses.

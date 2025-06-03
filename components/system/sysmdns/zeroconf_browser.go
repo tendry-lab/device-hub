@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/open-control-systems/zeroconf"
+	"github.com/tendry-lab/zeroconf"
 
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // ZeroconfBrowserParams represents various options for zeroconf mDNS browser.

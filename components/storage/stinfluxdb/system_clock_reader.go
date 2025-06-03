@@ -7,8 +7,8 @@ import (
 
 	"github.com/influxdata/influxdb-client-go/v2/api"
 
-	"github.com/open-control-systems/device-hub/components/status"
-	"github.com/open-control-systems/device-hub/components/system/syscore"
+	"github.com/tendry-lab/device-hub/components/status"
+	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
 // SystemClockReader reads the UNIX timestamp from the influxdb.

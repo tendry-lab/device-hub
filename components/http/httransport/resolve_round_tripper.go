@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/open-control-systems/device-hub/components/system/sysnet"
+	"github.com/tendry-lab/device-hub/components/system/sysnet"
 )
 
 // ResolveRoundTripper allows to perform hostname resolving before sending the HTTP request.
