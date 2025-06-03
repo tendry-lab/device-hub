@@ -1,3 +1,9 @@
+## Release 0.2.0
+
+**New Features**
+
+- Update the library imports following the organisation's renaming
+
 ## Release 0.1.0
 
 **New Features**
