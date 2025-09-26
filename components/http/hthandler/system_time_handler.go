@@ -37,7 +37,7 @@ func (h *SystemTimeHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	response := ""
 
-	str := r.URL.Query().Get("value")
+	str := r.URL.Query().Get("timestamp")
 	if str == "" {
 		timestamp, err := h.clock.GetTimestamp()
 		if err != nil {
