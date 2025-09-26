@@ -48,7 +48,7 @@ func (c *SystemClock) SetTimestamp(timestamp int64) error {
 	}
 
 	query := req.URL.Query()
-	query.Set("value", strconv.FormatInt(timestamp, 10))
+	query.Set("timestamp", strconv.FormatInt(timestamp, 10))
 	req.URL.RawQuery = query.Encode()
 
 	resp, _, err := c.client.Do(req)
