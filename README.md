@@ -1,3 +1,5 @@
+- [![Device-Hub](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml)
+
 ## Introduction
 
 device-hub is a self-hosted software solution for collecting, storing, and monitoring data from IoT devices on a local network. It was originally designed to work with devices based on the [control-components](https://github.com/tendry-lab/control-components) firmware, but it actually supports any device with an HTTP API, making it suitable for a wide range of smart home, industrial automation, and IoT data monitoring applications.
@@ -50,10 +52,6 @@ For more detailed explanations see the installation [instructions](#Installation
 - Try to keep PR small.
 - New code should be similar to existing code. Use the [Google Go Style Guide](https://google.github.io/styleguide/go/).
 
-## Build Status
-
-- [![Device-Hub](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml)
-
 ## License
 
-This project is licensed under the MPL 2.0 License - see the LICENSE file for details.
+This project is licensed under the Apache 2.0 License - see the LICENSE file for details.

@@ -1,4 +1,4 @@
-name: Device-Hub
+name: device-hub
 
 on:
   pull_request:
@@ -22,10 +22,20 @@ jobs:
       checks: write
 
     steps:
-      - name: Checkout repository
+      - name: checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
-      - name: Set up Go
+      - name: check license headers
+        env:
+          CI_COMPONENTS_PATH: ci-components
+          PROJECT_PATH: .
+        shell: bash
+        run: |
+          ci-components/scripts/fmt/check_license.sh
+
+      - name: set up Go
         uses: actions/setup-go@v5
         with:
           go-version: 1.23
@@ -48,11 +58,13 @@ jobs:
             exit 1
           fi
 
-      - name: build application
+      - name: run tests
         shell: bash
         run: |
-          go build ./...
           go test ./... --race
 
+      - name: check build with Docker
+        shell: bash
+        run: |
           cd projects/main
           docker compose build
