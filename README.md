@@ -1,4 +1,4 @@
-- [![Device-Hub](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml)
+[![Device-Hub](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/tendry-lab/device-hub/actions/workflows/build.yml)
 
 ## Introduction
 
