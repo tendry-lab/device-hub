@@ -18,10 +18,20 @@ import (
 
 // DBParams provides various configuration options for influxDB.
 type DBParams struct {
-	URL    string
-	Org    string
-	Token  string
+	// URL - InfluxDB URL.
+	URL string
+
+	// Org - InfluxDB organisation name.
+	Org string
+
+	// Token - InfluxDB API token.
+	Token string
+
+	// Bucket - InfluxDB bucket name.
 	Bucket string
+
+	// TimestampRestoreRange - number of days to use for the timestamp lookup.
+	TimestampRestoreRange int
 }
 
 // Pipeline contains various building blocks for persisting data in influxdb.
@@ -54,7 +64,11 @@ func NewPipeline(ctx context.Context, params DBParams) *Pipeline {
 
 // BuildReader builds reader that retrieves device timestamps from InfluxDB.
 func (p *Pipeline) BuildReader(deviceID string) stcore.SystemClockReader {
-	return NewSystemClockReader(p.queryClient, p.params.Bucket, deviceID)
+	return NewSystemClockReader(p.queryClient, SystemClockReaderParams{
+		Bucket:                p.params.Bucket,
+		DeviceID:              deviceID,
+		TimestampRestoreRange: p.params.TimestampRestoreRange,
+	})
 }
 
 // BuildHandler builds the data handler that stores the device data in InfluxDB.
