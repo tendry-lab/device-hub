@@ -16,23 +16,32 @@ import (
 	"github.com/tendry-lab/device-hub/components/system/syscore"
 )
 
+// SystemClockReaderParams - various parameters used during timestamp reading.
+type SystemClockReaderParams struct {
+	// Bucket - InfluxDB bucket name.
+	Bucket string
+
+	// DeviceID - device identifier.
+	DeviceID string
+
+	// TimestampRestoreRange - number of days to use for the timestamp lookup.
+	TimestampRestoreRange int
+}
+
 // SystemClockReader reads the UNIX timestamp from the influxdb.
 type SystemClockReader struct {
-	bucket   string
-	deviceID string
-	client   api.QueryAPI
+	params SystemClockReaderParams
+	client api.QueryAPI
 }
 
 // NewSystemClockReader is an initialization of SystemClockReader.
 func NewSystemClockReader(
 	client api.QueryAPI,
-	bucket string,
-	deviceID string,
+	params SystemClockReaderParams,
 ) *SystemClockReader {
 	return &SystemClockReader{
-		bucket:   bucket,
-		deviceID: deviceID,
-		client:   client,
+		params: params,
+		client: client,
 	}
 }
 
@@ -40,10 +49,11 @@ func NewSystemClockReader(
 func (r *SystemClockReader) ReadTimestamp(ctx context.Context) (int64, error) {
 	query := fmt.Sprintf(`
 	from(bucket: "%s")
-	  |> range(start: -30d)
+	  |> range(start: -%dd)
 	  |> filter(fn: (r) => r["_measurement"] == "%s" and r["device_id"] == "%s")
 	  |> last()
-	  |> keep(columns: ["_time"])`, r.bucket, "telemetry", r.deviceID)
+	  |> keep(columns: ["_time"])`,
+		r.params.Bucket, r.params.TimestampRestoreRange, "telemetry", r.params.DeviceID)
 
 	result, err := r.client.Query(ctx, query)
 	if err != nil {
@@ -81,7 +91,7 @@ func (r *SystemClockReader) ReadTimestamp(ctx context.Context) (int64, error) {
 	timestamp := record.Time().Unix()
 
 	syscore.LogInf.Printf("influxdb: read latest device UNIX timestamp: id=%v value=%v",
-		r.deviceID, timestamp)
+		r.params.DeviceID, timestamp)
 
 	return timestamp, nil
 }
